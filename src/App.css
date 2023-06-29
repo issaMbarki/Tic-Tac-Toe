@@ -4,22 +4,12 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .homeImage{
     height: 40vh;
 }
-span.b-right{
-    border-right: solid 1px white ;
-}
-span.b-left{
-    border-left: solid 1px white ;
-}
-span.b-bottom{
-    border-bottom: solid 1px white ;
-}
-span.b-top{
-    border-top: solid 1px white ;
-}
+
 span{
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+    color: white;
 }
 .grid-container{
     margin: 0 !important;
