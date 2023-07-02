@@ -18,10 +18,10 @@ function VerticallyCenteredModal(props) {
         <Container>
           <Row>
             <Col>
-              <PlayerType title={"Player 1"} symbol={"x"} />
+              <PlayerType title={"Player 1"} symbol={"X"} />
             </Col>
             <Col>
-              <PlayerType title={"Player 2"} symbol={"o"} />
+              <PlayerType title={"Player 2"} symbol={"O"} />
             </Col>
           </Row>
         </Container>
