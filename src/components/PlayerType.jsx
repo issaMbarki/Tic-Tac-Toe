@@ -1,22 +1,22 @@
-import { Button, Card } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+import { Button, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Xplayer from '../assets/x.png';
+import Oplayer from '../assets/o.png';
 
-export const PlayerType = ({title,symbol}) => {
-  const navigate =useNavigate();
-  const handleClick =()=>{
-    // localStorage.setItem('player', symbol);
-    navigate('/play');
-  }
+export const PlayerType = ({ title, symbol }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    localStorage.setItem("player", symbol);
+    navigate("/play");
+  };
   return (
-    <Card style={{ width: '18rem' }}>
-        {/* https://picsum.photos/200 */}
-      <Card.Img variant="top" src="" />
+    <Card className="position-relative h-100"onClick={handleClick} >
+      <Card.Img className="symbol" variant="top" src={symbol==='O'?Oplayer:Xplayer}/>
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
-       <Button variant='primary' onClick={handleClick}>
-PLay
-       </Button>
+        <Button variant="primary" >
+        {title}
+        </Button>
       </Card.Body>
     </Card>
-  )
-}
+  );
+};

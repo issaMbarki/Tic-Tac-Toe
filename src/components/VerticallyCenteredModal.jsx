@@ -11,7 +11,7 @@ function VerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          choose your player 
+          Choose a symbol 
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>

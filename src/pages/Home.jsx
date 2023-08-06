@@ -22,7 +22,7 @@ function Home() {
         </p>
       </Row>
       <Row>
-        <Button variant="primary" className="mt-5" onClick={() => setModalShow(true)}>Start</Button>
+        <Button variant="primary" className="mt-5" onClick={() => setModalShow(true)}>Play</Button>
         <VerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
