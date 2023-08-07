@@ -5,7 +5,7 @@ import { PLay } from "./pages/PLay";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/tic-tac-toe" element={<Home />} />
       <Route path="/play" element={<PLay />} />
     </Routes>
   );
