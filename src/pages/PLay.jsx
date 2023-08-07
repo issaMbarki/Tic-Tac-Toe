@@ -69,7 +69,7 @@ export const PLay = () => {
 
   //Check if the user didn't choose his player (x or o)
   if (!localStorage.getItem("player")) {
-    return <Navigate to="/" />;
+    return <Navigate to="/tic-tac-toe" />;
   }
 
   const square = (index) => {

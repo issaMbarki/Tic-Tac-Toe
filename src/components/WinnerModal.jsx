@@ -6,7 +6,7 @@ export const WinnerModal = (props) => {
   const navigate = useNavigate();
 
   const backHome = () => {
-    navigate("/");
+    navigate("/tic-tac-toe");
   };
   return (
     <Modal

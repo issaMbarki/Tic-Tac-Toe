@@ -12,7 +12,7 @@ export const NavBar = ({ playAgain }) => {
       <li
         className="list-group-item d-flex flex-column align-items-center"
         onClick={() => {
-          navigate("/");
+          navigate("/tic-tac-toe");
         }}
       >
         <i className=" fa-solid fa-house"></i>
