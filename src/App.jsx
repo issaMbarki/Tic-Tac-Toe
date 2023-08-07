@@ -6,7 +6,7 @@ function App() {
   return (
     <Routes>
       <Route path="/tic-tac-toe" element={<Home />} />
-      <Route path="/play" element={<PLay />} />
+      <Route path="/tic-tac-toe/play" element={<PLay />} />
     </Routes>
   );
 }
