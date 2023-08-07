@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 export const NavBar = ({ playAgain }) => {
   const navigate = useNavigate();
-  const [sound, setSound] = useState(JSON.parse(localStorage.getItem('sound')));;
+  const [sound, setSound] = useState(localStorage.getItem('sound')?JSON.parse(localStorage.getItem('sound')):true);
   useEffect(() => {
     localStorage.setItem('sound',sound);
   }, [sound]);
@@ -12,7 +12,7 @@ export const NavBar = ({ playAgain }) => {
       <li
         className="list-group-item d-flex flex-column align-items-center"
         onClick={() => {
-          navigate("/tic-tac-toe");
+          navigate("/Tic-Tac-Toe");
         }}
       >
         <i className=" fa-solid fa-house"></i>

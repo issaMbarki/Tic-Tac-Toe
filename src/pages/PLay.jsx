@@ -42,8 +42,8 @@ export const PLay = () => {
       const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
       delay(700).then(() => {
         setBoard(newBoard);
+        const sound1 = new Audio(move1);
         if (JSON.parse(localStorage.getItem("sound"))) {
-          const sound1 = new Audio(move1);
           sound1.play();
         }
         setCurrentPlayer(player);
@@ -58,8 +58,8 @@ export const PLay = () => {
       if (newBoard[index] === null) {
         newBoard[index] = currentPlayer;
         setBoard(newBoard);
+        const sound2 = new Audio(move2);
         if (JSON.parse(localStorage.getItem("sound"))) {
-          const sound2 = new Audio(move2);
           sound2.play();
         }
         setCurrentPlayer(computer);
@@ -69,7 +69,7 @@ export const PLay = () => {
 
   //Check if the user didn't choose his player (x or o)
   if (!localStorage.getItem("player")) {
-    return <Navigate to="/tic-tac-toe" />;
+    return <Navigate to="/Tic-Tac-Toe" />;
   }
 
   const square = (index) => {
