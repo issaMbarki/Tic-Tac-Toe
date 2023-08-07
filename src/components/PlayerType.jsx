@@ -7,7 +7,7 @@ export const PlayerType = ({ title, symbol }) => {
   const navigate = useNavigate();
   const handleClick = () => {
     localStorage.setItem("player", symbol);
-    navigate("/play");
+    navigate("/tic-tac-toe/play");
   };
   return (
     <Card className="position-relative h-100"onClick={handleClick} >
